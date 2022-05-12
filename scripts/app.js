@@ -1,12 +1,34 @@
 
-// Grab DOM element using id
+// // Grab DOM element using id
 
-const targetDiv = document.getElementById("Welcome");
+// const form = document.getElementsByTagname('form')[0];
 
-// this method is connected to the button in the HTML page and triggers a border change onClick
+// // const [input,button] = form.elements;
+// const input = form.elements.searchInput;
 
-const setBorder = () => {
-  targetDiv.style.border = "1px solid red";
+// input.addEventListener('focus', () => alert('focused'), false);
+// input.addEventListener('change', () => alert('changed'), false);
+// // const form = document.forms['search'];
+// form.addEventListener ('submit', search, false);
 
-  console.log("This is the Change Method");
-};
+// function search() {
+//     alert(' Form Submitted');
+
+// }
+// function search(event) {
+//   alert('Form Submitted');
+//   event.preventDefault();
+// }
+// input.addEventListener('focus', function(){
+//   if (input.value==='Search Here') {
+//       input.value = '' 
+//   }
+// }, false);
+
+// input.addEventListener('blur', function(){
+//   if(input.value === '') {
+//       input.value = 'Search Here';
+//   } }, false);
+
+document.querySelector("#year").innerHTML = new Date().getFullYear()
+document.querySelector("#date").innerHTML = new Date(document.lastModified).toLocaleString()
