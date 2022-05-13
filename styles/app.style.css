@@ -13,6 +13,9 @@ header {
     background-color: #b0c4de;
     padding: 0.1em;
     border-radius: 0.5em;
+    animation-name: change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 
 }
 h1 {
@@ -36,6 +39,13 @@ li {
     margin-right: 10px;
     border-radius: 0.5em;
     box-shadow: 0px 2px 0px 2px #b0c4de;
+    transition: width 2s, height 2s, transform 2s;
+    
+}
+.fami:hover {
+    width: 20%;
+    height: 20%;
+    transform: rotateZ(60deg);
 }
 
 footer {
@@ -44,6 +54,17 @@ footer {
     text-align: center;
     padding: 0.2em;
     border-radius: 0.5em;
+    animation-name: change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes change {
+    from {background-color: #b0c4de;}
+    to {background-color: aquamarine;}
+    from {background-color: aquamarine;}
+    to {background-color: aqua;}
+    from {background-color: aqua;}
+    to {background-color: #b0c4de;}
 }
 footer  p {
     color: rgb(104, 9, 9);
