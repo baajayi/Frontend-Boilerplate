@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+</head>
+<body>
+    <main>
+       <h2> AJAX </h2>
+<p> is used by web pages to exchange information asynchronously without reloading.
+Client send requests to servers with the help of Ajax and the response is usually received as JSON data or in small fragments instead of a full HTML page.
+CORS is the solution to the Same-Origin policy (This blocks all requests from a domain that is different from the page making the requests) implemented by all modern browsers. CORS allows resources on a domain to be requested by other websites outside the domain. All necessary information to make this possible are specified in the HTTP headers.
+</p>
+<p>
+AJAX is the short way of writing Asynchronous JavaScript XML. It is Asynchronous because the program doesn’t have to stop while waiting for a response. It can continue running and trigger an event when the response is received. Callbacks manages this process and make it run smoothly.</p>
+<p>The original format in which Ajax responses were received is XML. Now that JSON is more common, some people prefer to refer to the technology as AJAJ.
+An Application Programming Interface (API) is a collection of methods that allows external entities to access another program or service.
+The fetch API has superseded XMLHttpRequest as the standard for sending and receiving data across a network.</p>
+<p>We use the command fetch(URL)  to make the request. We use the .then method to deal with the response. It is also good to use the catch() to catch any error since we are dealing with a promise.</p>
+<p>The response has the ok property that tells us that the response is successful. The statusText property tells what is wrong if the response fails.
+For data received as JSON, the json()  method is used to convert it to a JS object and the object.entries() method used to view its key value pairs.
+A response can also be created using the constructor function.</p>
+<p>The URL is the only required property for a request, but we can make a finer request by providing a request object as an argument. Its properties include the URL, the method (GET by default), headers, mode, cache, etc.
+HTTP headers are used to pass additional information about requests and responses.
+The fetch API includes the FormData interface which makes it easier to submit information in forms using Ajax. </p>
+
+    </main>
+</body>
+</html>

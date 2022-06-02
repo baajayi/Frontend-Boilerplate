@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+        <h2>Functions, Execution Context and the Call Stack</h2>
+<p>The global execution context follows a thread of code where JavaScript goes line by line execute synchronously one line at a time.
+JavaScript only saves a function in the memory and does not execute the code in the function until the function is invoked or called. The value of an unexecuted function is undefined.
+When a function is called, a local execution context is created within the global execution context.</p>
+<p>The call stack enables JS to track where it has been, where it is, where it is going to and to return to where it has been. The call stack is an array of execution contexts where the global execution context is at index 0. Other local contexts are pushed and popped from the array as needed.</p>
+<h2>Callbacks and Higher Order Functions</h2>
+<p>Functions that are not reusable   are not really useful. We can make them useful by making them reusable. They can be reusable if they accept parameters. When called, we can supply arguments that would replace the parameters. 
+Higher order functions allow us to pass functions as arguments to other functions. Higher order functions make it possible to reuse our functions even more widely. In the call stack where the global execution context I at the base, functions passed as arguments to other functions are right on top of the function in which they are called. We can use functions this way because in JS, functions first-class objects.</p>
+
+    </main>
+</body>
+</html>

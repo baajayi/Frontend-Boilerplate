@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+       <h2> HTML5 APIs</h2>
+<p>HTML5 allows different feature to be developed independently at their own pace and be implemented without having to wait for other features to be completed. Modules are in different stage from conception to development and to full implementation. caniuse.com allows us to see if a specific feature is ready for use.</p>
+<p>The data- attribute allows data to be embedded in a page using custom attributes ignored by the browser. The sole purpose of the embedded data is to be used by a specific JS program. While the name of the attributes can be decided by the developer, they must start with “data-“, contain only lowercase letters, numbers, hyphens, dots, colons or underscores. They may also contain a string value. It could be something like;
+data-name = “spider man”
+data-superpower = “flying”
+data-rating = “6”
+data-group = “marvel”
+
+The data- attribute is supported by most modern browsers.
+We can work around the string-only value by first encoding the value as a JSON string and performing a type conversion later.</p>
+<p>HTML5 has a number of APIs that helps gain access to hardware such as cameras, batteries, geolocation and so on. 
+The HTML5 web storage API provides a key-value store on the client, similar to cookies but with fewer restrictions. The web storage API has a storage capacity much more than 4kb for cookies, makes information available in multiple windows, keeps data validity even after cookies have expired.
+The window object of a browser that supports the web storage API will have the localStorage property. sessionStorage works the same way but only for the current session (works like cookies?)</p>
+<p>The geolocation API is used to get the geographical location of the device, meaning we can use to find the client’s exact location. We can also use the information to link nearby locations and be able to measure the client’s speed and direction of travel. If supported by the browser, there will be a geolocation property of the navigator object. This geolocation property has the getCurrentPosition() method that will return a position object to a specified callback function called youAreHere(). Passing the position object to the youAreHere() function returns a longitude and latitude property.
+<p>The Worker() constructor function creates a new worker that allows JS program to run smoothly avoiding the dreaded “unresponsive script” message.
+Websocket is a new protocol that allows two-way communication between a client and the server. Once established, the connection is kept open and responses are pushed to the client once received from the server.
+The notification API allows us to show messages using the device’s inbuilt notification system. The require the user’s permission to work and permission can be requested by using the requestPermission() method of the notification global object.</p>
+Multimedia before HTML5 was only made possible with the use of plugins such as flash. With HTML5 came the <audio> and <video> tags for inserting audio and video clips into a web page. These objects have methods like play(), pause(), muted, playbackRate, loop, and duration. All these can be used to control how the multimedia is played.</p>
+<h2>Canvas, SVG, and Drag and Drop</h2>
+<p>The canvas element allows graphics to be drawn unto a web page in real time using JS. Anything that can be imagined can be drawn on the canvas. The canvas element is created by adding the <canvas> tag to the HTML page. This element takes the width and height attributes. If these properties are set in the CSS only, we would be missing the coordinate system of the canvas element. The fillStyle and strokeStyle properties allows us to apply color to the canvas. They both take one of three values; a string representing the color, a CanvasGradient object or a CanvasPattern object. The WebGL is a new API for 3D graphics. With this API, we can draw 3d images.</p>
+We can also use the canvas element to manipulate images.
+Scalable Vector Graphics (SVG) is a specific file format theta allows us to describe vector graphics using XML. An advantage of this format is that they retain their quality regardless of how they’e skewed, blown up and shrunk down. We can draw in svg using the svg tags.
+We can draw custom shapes in both svg and canvas but while canvas allows for pixel manipulation, it is impossible to add more to the canvas once it is done because it operates an immediate mode. SVG operates in the retained mode hence can be manipulated from the DOM.
+The Drag and Drop API allows us to specify elements that are draggable and specify what happens when they are dragged and dropped in other locations on the page.
+
+
+    </main>
+</body>
+</html>

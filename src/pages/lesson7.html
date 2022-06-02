@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+       <h2> Functions</h2>
+<p>Functions as first-class objects means they can be passed as arguments to other functions, can accept other functions as arguments and so on.
+Because functions are first class objects, they also have properties and methods. For example, the .length method returns the number of parameters the function requires, the .call() method causes the first argument in the function to take up the value of this. The apply() method does same but requires the argument to be passed as an array.</p>
+<p>We can add custom properties to functions.
+Immediately Invoked Function Expressions (IIFE) are invoked immediately after their definition We define them by placing a parenthesis at the end of the function definition and placing the whole block inside a parenthesis. IIFEs help us prevent conflicting variable names we define with ones that may come from JS libraries and cause errors in our program. They ensure that the variables are not available beyond the block in which they are defined and used. We can use IIFEs to define temporary variables, set up initialization code, set strict mode safely, and create self-contained code blocks.</p>
+<p>When an anonymous function is assigned to a variable that has the same name as the function, the function is able to call itself, define and redefine itself. The caution is that when functions redefine themselves this way, they lose properties that have been previously set on them.
+Recursive functions are functions that invokes itself until a certain condition is met.</p>
+<p>Callbacks are passed as arguments to other functions; they are then invoked inside those functions. They are used to facilitate event-driven asynchronous programming. Asynchronous programming allows our code to be run out of order since only one code can be run at a time. With callbacks, we do not run into error, rather we continue running the program while waiting for the callback to be invoked and then return to the executing the rest of the program.
+We can declare a generator function by placing an asterisk(*) after the function declaration;
+function* generatorFunction () {
+//our code goes here
+}
+Functional programming involves the passing of functions as arguments to other functions and return functions from other functions. It is a programming paradigm and with other programming paradigms, it makes JavaScript multi-paradigm language.
+A pure function has a return value that depends on the value of the arguments, has no side-effects and returns the same value when provided with the same arguments.
+Becoming a functional JavaScript programmer helps keeps changes in state to a minimun and improve overall standard of one’s programming.</p>
+
+<h2>CSS3 Transforms and Transitions</h2>
+<p>CSS3 allows us to display text at an angle and animate in a way that was only possible with JS before CSS3
+The transform property lets us rotate and scale any element on the page.
+The transform property allows us to move element up, down, left, or right without impacting the flow of the document.
+The scale(x,y) function scales an element by the defines factors along the x and y axes. 
+We can rotate an element around the point of origin by passing an angle as an argument to the rotate() function. 
+We can do multiple transitions like changing the color of an element, the rotation and the size at the same time.
+Transforms, transitions and animations makes out site more dynamic.</p>
+
+    </main>
+</body>
+</html>

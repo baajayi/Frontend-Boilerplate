@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+       <h2> Forms</h2>
+<p>Forms are made up of an HTML <form> element and form controls such as input fields, radio buttons, checkboxes, select menus, and so on. Submitting the form activates processing of information gathered with all the form controls. Forms used to be processed on the server by programming languages such as PHP or Ruby. Nowadays, it is becoming popular to process forms on the client side before sending to the server. We can change the value of a form control dynamically using JavaScript.</p>
+<p>The document.forms property can be used to access all the form elements in a document. We can then pass the index of the particular one we want to access. We can also use the getElementByTagname(“form”)[i] to access the form at index i. We can also use the name attribute of the form instead of the index.
+We can submit a form automatically by using the .submit() method on the form or the user can submit it by using a button or input element with a type attribute of submit.</p>
+<p>The .action property of the form can be used to set the action attribute so that the form is sent to a different URL to be processed on the server.
+The placeholder attribute allows us to display something in the input field before the user enters something else.
+For password encryption, we need to set the type attribute to password.
+The name attribute can be used to group related form controls such as checkboxes and radio buttons. For radio buttons, having the same name helps us ensure that only one can be checked at the same time.
+Input type attribute set to file with a browse button lets users select a file from their device.</p>
+<h2>Form validation</h2>
+<p>Form validation helps us check that all the information is valid. There are various ways to validate a form. 
+If done on the in the browser, we call it client-side validation. Some built-in form validation can be used with HTML form controls. Examples of such include the required attribute, the minlength and maxlength, min and max and the type attribute.
+We can also validate against regex; a pattern that can be used to match character combinations in text strings.
+We can deactivate the submit button until the form is correctly filled. </p>
+<h2>FormData</h2>
+<p>The FormData interface provides a way to easily build key/value pairs that represent fields in our forms and their corresponding values. There are methods that can be used with FormData. We can add a new value to the FormData with the .append() method, we can delete a field and its value with the .delete() method, we can use the .getAll() method to return an array of all the values assigned to a given key. </p>
+
+    </main>
+</body>
+</html>

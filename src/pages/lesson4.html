@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+    
+   <h2> Testing and Debugging</h2>
+<p> Errors are of three types; system errors are related to faulty system or external devices which the program uses, programmer errors can be traced to wrong logic, wrong syntax or a typo, while user error occurs when the user inputs a data that the program cannot handle.
+Programmers can control programmer errors, as such they should be minimal or non-existent. Programmers can also tell the program how to act should it experience other types of errors so as to minimize their impacts.
+Exceptions occur when the program returns a value that can be used to resolve the error. Stack traces produced by exceptions makes it easier to trace back exactly where the error originated from to where it was caught.
+Warnings do not cause the program to crash but might cause the program to execute incorrectly</p>
+<p>Testing and debugging makes it possible to identify and fix errors and exceptions which otherwise could have lurked around in our program for a long time before causing significant damage in the way the program works. Using strict mode can increase the number of errors and exceptions but it helps to increase clarity and speed.</p>
+<p>Linting tests the quality of JavaScript code and highlights sloppy programming practices such as inconsistent use of single and double quotes.
+Feature detection is used to determine browser support for a feature as not all browsers support all features. The recommended way to use feature detection is to use an if statement to check the availability of the object before calling its method;
+	If (Object exits) {
+		execute method
+	}
+This helps to prevent errors if the feature is not supported by the browser.
+We can use the browser for debugging by using methods such as alert(), console.log(), console.table(), and console.trace(). All these methods can be used to log the value of different variables at the points in which they are inserted into the code.</p>
+We can handle errors by using the error objects, wrapping them in if blocks to show up when the error occurs.
+We can handle exceptions by wrapping all the suspected codes in try, catch, and finally blocks.
+Test-driven development (TDD) prescribes a workflow that begins with writing tests that fail, writing codes to pass the tests, refactoring the code, testing the refactored code, and writing more tests for new features. Jest is an example of testing frameworks that provide a structure to write tests and run them.
+
+<h2>How SPAs Work</h2>
+Single-Page Applications with users by re-rendering the current page with new data from the server. SPAs do not load new HTML files from the server. Location-based SPAs uses window.location  to parse the URL, and then determine the resources requested, which is then loaded into the already rendered screen. The most important parts of the URL to window.location are pathname, hash, and query string (search).
+I still need to study more on these SPAs. Do we keep the files on the server and the program then load the difference between the current page and the requested page?
+The problem with SPAs
+The main problem with SPAs is that it uses JS for routing (what to show on the UI).
+history.pushState() is used to update URL without initiating a page reload
+It has too much code that may become too complex to handle.
+
+<h2>The HTML template Element</h2>
+The <template> element is used to render repeating portions of a page without having to write content for all. By using the cloneNode() method of the <template> element, we can display everything within the <template> element exactly where we want them.
+
+</main>
+</body>
+</html>

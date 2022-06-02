@@ -1,37 +1,20 @@
+# sleepoutside
 
-## Rapid Frontend Boilerplate
+## Description
 
+Use this as a starting point to complete the WDD 330 team activity: the SleepOutside web application. It scaffolds out a simple web app with snowpack support to bundle up our assets.
 
-Welcome to YouGo! This simple boilerplate is meant to be a quick setup for you to begin writing HTML, CSS and JS right away!
+## Prerequisites
 
-Here's a breakdown of the folder structure and the different parts we've created for you
+- You must have Node installed. visit https://byui-cit.github.io/advcss/lesson01/l01-software.html and skip to the Node section for instructions
 
+## Setup
 
-```
+- `npm install`
+- `npm run start` starts up a local server and updates on any JS or CSS/SCSS changes.
 
- -> Pages
- -> Scripts
- -> Styles
+## Other commands
 
-
-```
-
-- The **Pages** folder is where our html pages will be
-- The **Scripts** folder contains Javascript files which will be linked to our HTML
-- The **Styles** folder contains our CSS files
-
-## Technologies
-
-```
-HTML
-CSS
-JavaScript
-
-```
-
-
-## Pre-requisites
-
-Download VsCode
-Install node (npm)
-Install LiveShare Extension
+- `npm run build` to build final files when you are ready to turn in. Note that only one person in your group should run build.
+- `npm run lint` to run ESLint against your code to find errors.
+- `npm run format` to run Prettier to automatically format your code.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+        <h2>Get Started with JSON Web Tokens</h2>
+<p>JSON web token (JWT) defines a way of sending and receiving information as JSON object between parties. The object is signed digitally and so can be verified and trusted. There are two ways to sign a JWT; a secret using HMAC algorithm or a public or private key pair using RSA.
+JWTs are compact because they are small in size and can be sent over a URL, POST parameter or inside the HTTP header. They are also self-contained because all the information required about the user are contained in the payload.
+<p>We use JWTs for authentication and information exchange. 
+JWTs contains the header, the payload and the signature. The header has the token type and the hashing algorithm type. The payload contains the claims or the information that is being sent about the entity. The signature is created by taking the encoded header, the encoded payload, a secret and the algorithm specified in the header, and sign.</p>
+<p>In authentication, when users log in their credentials, a JWT is returned. This should not be kept longer than required to avoid running into security compromise.
+JWT is less worded than XML and smaller when encoded. In terms of security, while Simple Web Tokens (SWT) can only be signed by shared secret using HMAC algorithm, JWT can also use a private/public key pair. JSON parsers are common because they map directly to objects in JS and other programming languages.
+Develop, Debug, Learn?
+Developers need to build tools that help new or aspiring developers learn as they work. Learning should be at the center of all that we do. We should have tools that allows us learn as we develop and debug.
+</p>
+
+
+
+
+    </main>
+</body>
+</html>

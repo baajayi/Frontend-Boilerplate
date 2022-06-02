@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <a href="index.html"> W330 Portfolio</a>
+        <h2>The Window Object</h2>
+<p> window object is the global object of the browser JavaScript environment. 
+The Browser Object Model (BOM) is a collection of properties and methods that contains information about the browser and the computer screen. We can find out which browser, screen dimensions, browser history. It can also be used for popup windows but we want to avoid that as it may annoy users. Examples of methods in the BOM include; window.alert() which print something as a popup to the screen, window.confirm() which uses a popup window to ascertain that a user really wants to take an action, and window.prompt() which provides an input field in popup box. Since these methods are using popup boxes, should we not find another way to achieve the same thing instead of annoying our users?
+The navigator property allows access to the Navigator object which give information about the browser being used. The window.navigator.userAgent returns the name of the browser being used. We are warned not to rely on the information because some browsers impersonate others.
+The window.location property contains information about the current page and we can look at other properties of this to get more specific information. .href  returns the full string, .protocol returns the protocol being used, .hostname returns the just the domain, while the .port property returns the port number if stated explicitly in the URL. Other properties include; .hash, .search, .pathname, and .origin. 
+The window.history property gives information about the browser history. With the .length property, we can get the number of pages that have been visited in the current browser session, the .go(x) property takes us x steps forward (or -x steps backwards) from the current page.
+Window.screen object contains information about the screen; the width, height, availwidth and availheight.</p>
+<h2>The Document Object</h2>
+<p>is an object of the window that has methods and properties that can deal with the page that has been loaded into the window. It manipulates the items on the page. document.write() can be used to replace the whole document with the string passed as an argument. It is not advised as I can only realistically be used inline HTML.</p>
+<h2>Cookies</h2>
+<p> store small pieces of information and remembers them in between requests so the user does not appear new to the page at every request. This is essential because HTTP is a stateless protocol and the browser does not remember anything from one request to the other. The EU Cookie Directive requires all websites based in an EU country to seek permission before setting cookies. Cookies are created with the command document.cookie and is stored as a text file containing name/value pairs separated by semicolons. They can be removed after every session by setting their expiry to a past date.</p>
+<h2>The template element</h2>
+<p> template element is used for holding HTML content that is not loaded immediately a page is loaded but is instantiated during runtime using Java Script. It is used to ensure that contents loaded with JavaScript are valid.</p>
+
+
+    </main>
+</body>
+</html>
